@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clash Squad | بطولة فري فاير</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="الصفحة الرئيسية">
+        <span class="brand-mark">FF</span>
+        <span>CLASH <b>SQUAD</b></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">☰</button>
+      <nav id="mainNav">
+        <a class="active" href="#home">الرئيسية</a>
+        <a href="#register">تسجيل الفريق</a>
+        <a href="#schedule">الجدول</a>
+        <a href="#rules">القوانين</a>
+      </nav>
+      <button class="outline-button" id="adminButton">لوحة الإدارة</button>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">بطولة الموسم • CLASH SQUAD</p>
+          <h1>أثبت أن فريقك<br /><span>الأقوى في الساحة</span></h1>
+          <p class="hero-text">
+            سجّل فريقك، تابع المواجهات، ونافس أفضل لاعبي Free Fire في بطولة
+            عربية منظمة وسريعة.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#register">سجّل فريقك الآن <span>←</span></a>
+            <a class="text-button" href="#schedule">شاهد الجدول</a>
+          </div>
+          <div class="hero-note"><span class="pulse"></span> التسجيل مفتوح لفترة محدودة</div>
+        </div>
+
+        <div class="hero-card">
+          <div class="card-top"><span>المواجهة القادمة</span><strong>ROUND 01</strong></div>
+          <div class="versus">
+            <div class="team"><div class="team-logo red">🔥</div><b>FALCONS</b><small>الفريق الأول</small></div>
+            <div class="vs">VS</div>
+            <div class="team"><div class="team-logo blue">⚡</div><b>PHANTOMS</b><small>الفريق الثاني</small></div>
+          </div>
+          <div class="match-time"><span>الجمعة 12 سبتمبر</span><b>08:30 م</b></div>
+        </div>
+      </section>
+
+      <section class="stats section">
+        <div><strong id="teamCount">128</strong><span>فريق مسجل</span></div>
+        <div><strong>256</strong><span>لاعب منافس</span></div>
+        <div><strong>32</strong><span>مواجهة مجدولة</span></div>
+        <div><strong>01</strong><span>بطل الموسم</span></div>
+      </section>
+
+      <section class="content-grid section" id="register">
+        <div class="section-heading">
+          <p class="eyebrow">JOIN THE BATTLE</p>
+          <h2>سجّل فريقك</h2>
+          <p>أدخل بيانات الفريق واللاعبين. التسجيل هنا تجريبي ويحفظ البيانات في متصفحك فقط.</p>
+        </div>
+
+        <form class="register-card" id="registerForm">
+          <div class="field full">
+            <label for="teamName">اسم الفريق</label>
+            <input id="teamName" name="teamName" placeholder="مثال: Desert Wolves" required />
+          </div>
+          <div class="field">
+            <label for="captain">اسم الكابتن</label>
+            <input id="captain" name="captain" placeholder="الاسم داخل اللعبة" required />
+          </div>
+          <div class="field">
+            <label for="captainId">ID الكابتن</label>
+            <input id="captainId" name="captainId" inputmode="numeric" placeholder="123456789" required />
+          </div>
+          <div class="field">
+            <label for="playerTwo">اللاعب الثاني</label>
+            <input id="playerTwo" name="playerTwo" placeholder="الاسم داخل اللعبة" required />
+          </div>
+          <div class="field">
+            <label for="playerTwoId">ID اللاعب الثاني</label>
+            <input id="playerTwoId" name="playerTwoId" inputmode="numeric" placeholder="987654321" required />
+          </div>
+          <button class="primary-button full" type="submit">إرسال طلب التسجيل <span>←</span></button>
+          <p class="form-message" id="formMessage" role="status"></p>
+        </form>
+      </section>
+
+      <section class="section schedule-section" id="schedule">
+        <div class="section-heading inline">
+          <div><p class="eyebrow">MATCH CENTER</p><h2>جدول المواجهات</h2></div>
+          <span class="status-pill"><i></i> مباشر ومحدث</span>
+        </div>
+        <div class="schedule-list">
+          <div class="schedule-row"><span class="round">01</span><div><b>Falcons <em>ضد</em> Phantoms</b><small>الجولة الأولى • خريطة برمودا</small></div><strong>12 سبتمبر<br /><small>08:30 م</small></strong></div>
+          <div class="schedule-row"><span class="round">02</span><div><b>Night Raid <em>ضد</em> Red Zone</b><small>الجولة الأولى • خريطة كالاهاري</small></div><strong>13 سبتمبر<br /><small>09:00 م</small></strong></div>
+          <div class="schedule-row"><span class="round">03</span><div><b>Storm X <em>ضد</em> Vipers</b><small>الجولة الثانية • خريطة برمودا</small></div><strong>14 سبتمبر<br /><small>08:30 م</small></strong></div>
+        </div>
+      </section>
+
+      <section class="rules section" id="rules">
+        <div><p class="eyebrow">PLAY FAIR</p><h2>قوانين سريعة</h2></div>
+        <div class="rule-list">
+          <div><span>01</span><p>الفريق يتكون من لاعبين أساسيين ولاعب احتياط اختياري.</p></div>
+          <div><span>02</span><p>يجب التأكد من صحة IDs قبل إرسال طلب التسجيل.</p></div>
+          <div><span>03</span><p>الالتزام بموعد المواجهة شرط أساسي للاستمرار في البطولة.</p></div>
+        </div>
+      </section>
+    </main>
+
+    <footer><span>© 2026 Clash Squad</span><span>صُنع للمنافسة 🔥</span></footer>
+    <div class="toast" id="toast"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
